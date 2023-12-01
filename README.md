@@ -1,0 +1,65 @@
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+
+# TITULO A DEFINIR
+<p align="center">
+CONTEÚDO DEFINIR.
+</p>
+
+## 📋 Requirements
+
+* Python 3.11+
+  
+## 🧰 Installation of the Libraries & Usage
+## pip install
+> To install the project's dependencies just run the command below.
+```sh
+pip install -r requirements.txt
+```
+
+## ⚙️ Getting Started
+
+> Please follow the [installation procedure](#installation--usage) and then run the following:
+```python
+"""
+Code below calculates the anthropometric values of a set of images using a specific pose estimation model.
+"""
+from src.anatomical_point_processor import AnatomicalPointProcessor
+from src.model.pose_estimation_model import PoseEstimationModel
+
+image_dir = '/Users/pose/desenvolvimento/workspace-python/posenet/images'
+dir_output = '/Users/pose/desenvolvimento/workspace-python/posenet/results'
+
+AnatomicalPointProcessor.create().process_one_model(
+    image_root_dir=image_dir,
+    dir_output=dir_output,
+    model_ps=PoseEstimationModel.MOVENET_LIGHTNING_INT_8)
+```
+
+```python
+"""
+Code below calculates the anthropometric values of a set of images using all pose estimation model.
+"""
+
+from src.anatomical_point_processor import AnatomicalPointProcessor
+from src.model.pose_estimation_model import PoseEstimationModel
+
+image_dir = '/Users/pose/desenvolvimento/workspace-python/posenet/images'
+dir_output = '/Users/pose/desenvolvimento/workspace-python/posenet/results'
+
+AnatomicalPointProcessor.create().process_all_models(
+    image_root_dir=image_dir,
+    dir_output=dir_output)
+```
+
+### [Plugin Repository](https://github.com/jeancomp/Plugin)
+
+## 🤖 Access our article in IEEE Xplore
+
+### [IEEE Xplore] COLOCAR O LINK
+
+## 👏 Contributing
+ 
+
+XXXXXX is an open-source project. If there is a bug, or other improvement you would like to report or request, we encourage you to contribute.
+
+Please, feel free to contact us for any questions: [![Gmail Badge](https://img.shields.io/badge/-ariel@lsdi.ufma.br-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ariel@lsdi.ufma.br)](mailto:ariel@lsdi.ufma.br)
