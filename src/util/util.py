@@ -5,8 +5,10 @@ import os
 class Util():
     
     @classmethod
-    def calculate_angle_arccos(cls,is_suplementar:bool,anatomical_point_left_extrmity:AnatomicalPoint,anatomical_point_central_extrmity:AnatomicalPoint,anatomical_point_right_extrmity:AnatomicalPoint):
-        
+    def calculate_angle_arccos(cls,is_suplementar:bool,
+                               anatomical_point_left_extrmity:AnatomicalPoint,
+                               anatomical_point_central_extrmity:AnatomicalPoint,
+                               anatomical_point_right_extrmity:AnatomicalPoint):
         vetor_ab =cls.get_vector(origin=anatomical_point_central_extrmity,extremity=anatomical_point_left_extrmity)
         vetor_ac =cls.get_vector(origin=anatomical_point_central_extrmity,extremity=anatomical_point_right_extrmity)
         
@@ -40,13 +42,14 @@ class Util():
         return CatersianPoint(x=vector_x,y=vector_y)
     
     @classmethod
-    def list_images(cls,diretorio_raiz):
-        lista_imagem = []
+    def list_images(cls,root_dir):
+        list_images = []
+        name_images = []
 
-        for _, _, arquivos in os.walk(diretorio_raiz):
-            nome_imagens = list(filter(lambda nome_arquivo:not nome_arquivo.startswith("."), arquivos))
+        for _, _, files in os.walk(root_dir):
+            name_images = list(filter(lambda name_file:not name_file.startswith("."), files))
             
-        lista_imagem = list(map(lambda nome:os.path.join(diretorio_raiz,nome),nome_imagens))
+        list_images = list(map(lambda name:os.path.join(root_dir,name),name_images))
             
-        return lista_imagem
+        return list_images
         

@@ -6,4 +6,5 @@ class AnatomicalPoint:
     nome:AnatomicalPointEnum
     eixo_y:float
     eixo_x:float
+    eixo_z:float
     

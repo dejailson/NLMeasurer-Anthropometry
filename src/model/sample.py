@@ -39,9 +39,9 @@ class Sample():
     def get_angle(self,moviment:me): 
         if moviment.name in self._name:
             if self.is_right:
-                return locale.format_string('%.2f',self._get_angle_right_articulation())
+                return self._get_angle_right_articulation()
             if self.is_left:
-                return locale.format_string('%.2f',self._get_angle_left_articulation())
+                return self._get_angle_left_articulation()
         return 'N/A'
 
     def _get_angle_right_articulation(self):

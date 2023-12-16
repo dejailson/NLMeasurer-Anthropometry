@@ -5,8 +5,15 @@ from src.util.util import Util
 from src.util.cvs_converter import CVSConverter
 from src.posenet.processor_posenet import ProcessorPosenet
 
+from src.model.sample import Sample
+from src.model.anatomical_point_enum import AnatomicalPointEnum
+from src.model.anatomical_point import AnatomicalPoint
+from src.model.moviment_enum import MovimentEnum as me
 
-# https://github.com/jeancomp/OpenDPMH
+import cv2
+import numpy as np
+import tensorflow as tf
+
 class AnatomicalPointProcessor():
     
     def __init__(self,) :

@@ -194,6 +194,7 @@ pyrightconfig.json
 
 ### Amostras ###
 imagens/
-
+imagens_light/
+imagens_thunder/
 ### SO ###
 .DS_Store
