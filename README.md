@@ -1,8 +1,7 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 	![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![OpenCV](https://img.shields.io/badge/opencv-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 
 # Comparing Human Pose Estimation Models for Assessing Upper Limb Range of Motion
-<p align="center">
-CONTEÚDO DEFINIR.
+> <p align="justify">This project provides the code used in our study that aimed to evaluate and compare the performance of different HPE models (PoseNet and four variations of MoveNet) for ROM assessment of the human upper limbs.
 </p>
 
 ## 📋 Requirements
@@ -60,6 +59,6 @@ AnatomicalPointProcessor.create().process_all_models(
 > To be defined 
 
 ## Contributing
->Comparing Human Pose Estimation Models for Assessing Upper Limb Range of Motion is an open-source project. If there is a bug, or other improvement you would like to report or request, we encourage you to contribute.
+>If there is a bug, or other improvement you would like to report or request, we encourage you to contribute.
 
 >Please, feel free to contact us for any questions: [![Gmail Badge](https://img.shields.io/badge/-ariel.teles@ifma.edu.br-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ariel.teles@ifma.edu.br)](mailto:ariel.teles@ifma.edu.br)
